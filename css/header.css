@@ -1,0 +1,48 @@
+:root{
+    --cor-back-cabecalho:#D9D9D9;
+    --cor-vermelho-botao: #900101;
+    --cor-texto-botao: #FFFFFF;
+}
+
+.cabecalho{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-back-cabecalho);
+    
+    
+}
+
+.cabecalho-botao{
+    width: 1.5em;
+    margin: 1em;
+}
+
+.cabecalho-login{
+    margin: 1em;
+}
+.cabecalho-login-link{
+    background-color: var(--cor-vermelho-botao);
+    border-radius: 8px;
+    padding: 0.2em 0.5em;
+    color: var(--cor-texto-botao);
+
+}
+
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-back-cabecalho);
+    width: 50vw;
+    height: 50vh;
+
+    position: absolute;
+    left: -50vw;
+    transition: .25s;
+}
+
+.menu-lateral--ativo{
+    left:0;
+    transition: .25s;
+}
